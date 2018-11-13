@@ -1,0 +1,35 @@
+@import '../../styles';
+
+.home-body{
+    padding: 0 70px;
+}
+
+.home-page-p {
+    text-align: left;
+}
+
+.landing-intro-container {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // landing text
+    h2 {
+        font-family: proxima nova, sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        color: #222;
+
+    }
+    .landing-left-side{
+        padding-right: 40px;
+    }
+    .landing-right-side{
+        .my-img{
+            background-image: url('../../media/IMG_E8438@3x.png');
+            height: 300px;
+            width: 300px;
+            background-size: contain;
+        }
+    }
+}
