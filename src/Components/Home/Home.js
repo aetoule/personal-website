@@ -20,11 +20,13 @@ class Home extends Component {
                     </div>
                 </div>
                 <br></br>
-                <p className="home-page-p">In addition to my UX Design work, I've built some projects as a front end developer 👩🏻‍💻</p>
+                <p className="home-page-p">In addition to my UX Design work, I have experience building some projects as a front end developer 👩🏻‍💻</p>
 
                 <p className="home-page-p">I wanted to be able to take my designs to a further step by learning how to make them come alive.</p>
 
                 <p className="home-page-p">Over the course of this journey I’ve built some applications I’m really proud of! Check them out below 😊</p>
+
+                <h2>My Work</h2>
             </div>
         );
     }

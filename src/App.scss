@@ -43,8 +43,6 @@ vertical-align: baseline;
 
 p {
   // font-size: 15px;
-  // font-family: 'Metropolis-medium';
-  // font-family: 'Nunito Sans', sans-serif;
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -76,16 +74,12 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 html {
-box-sizing:border-box
+box-sizing:border-box;
+font-size: 10px;
 }
 
 a{
   text-decoration: none;
-  // font-family: 'Metropolis-bold';
-  // font-family: futura-pt, sans-serif;
-  // font-weight: 600;
-  // font-style: normal;
-  // color: black;
 }
 * {
 box-sizing:inherit

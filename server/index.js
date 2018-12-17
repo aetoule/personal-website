@@ -12,4 +12,4 @@ app.use(bodyParser.json());
 // });
 
 const PORT = 3333;
-app.listen(PORT, ()=> console.log(`Server listening on port PORT`));
+app.listen(PORT, ()=> console.log(`Server listening on port ${PORT}`));

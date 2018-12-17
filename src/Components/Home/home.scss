@@ -19,17 +19,29 @@
         font-size: 40px;
         font-weight: 200;
         color: #222;
-
+        line-height: 1.2;
     }
     .landing-left-side{
         padding-right: 40px;
     }
     .landing-right-side{
         .my-img{
-            background-image: url('../../media/IMG_E8438@3x.png');
+            background-image: url('../../media/IMG_E8438.jpg');
             height: 300px;
             width: 300px;
+            border-radius: 50%;
             background-size: contain;
         }
     }
+}
+
+// header 
+.home-body > h2 {
+    padding-top: 10px;
+    font-family: futura-pt, sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
 }
