@@ -26,12 +26,21 @@
     }
     .landing-right-side{
         .my-img{
-            background-image: url('../../media/IMG_E8438.jpg');
-            height: 300px;
-            width: 300px;
+            background-image: url('../../media/profilePic.svg');
+            height: 250px;
+            width: 250px;
             border-radius: 50%;
             background-size: contain;
+            background-repeat: no-repeat;
+            // object-fit: center;
         }
+    }
+    .down-arrow{
+        background-image: url('../../media/noun_Arrow\ Down_1594877.svg');
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
