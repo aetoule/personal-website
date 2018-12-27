@@ -30,7 +30,9 @@ class Home extends Component {
                 <p className="home-page-p">Over the course of this journey I’ve built some applications I’m really proud of! Check them out below 😊</p>
 
                 <h2>My Work</h2>
-                <div ></div>
+                <div className="individual-project-container">
+                    {/* <div className="" */}
+                </div>
             </div>
         );
     }
