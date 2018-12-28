@@ -31,21 +31,28 @@ var transport = {
     }
   });
 
-  router.post('/send', (req, res, next) => {
+  app.post('/send', (req, res, next) => {
+    console.log(req.body);
     var name = req.body.name
     var email = req.body.email
     var message = req.body.message
     var content = `name: ${name} \n email: ${email} \n message: ${content} `
+
+    console.log('name', name);
+  console.log('email', email);
+  console.log('message', message);
   
     var mail = {
       from: name,
-      to: 'atoulegenova@gmail.com',  
+      to: creds.USER,  
       subject: 'New Message from Contact Form',
-      text: content
+      text: `${content}`
     }
   
     transporter.sendMail(mail, (err, data) => {
       if (err) {
+        console.log('transporter.sendMail error',err)
+
         res.json({
           msg: 'fail'
         })
