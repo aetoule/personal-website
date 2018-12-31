@@ -1,37 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-const Contact = () => {
+class Contact extends Component {
 
-    const resetForm = () => {
+    resetForm() {
         document.getElementById('contact-form').reset();
     }
 
-    const handleSubmit = (e) => { 
+    handleSubmit(e) { 
         e.preventDefault();
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-        axios({
-            method: "POST", 
-            url:"http://localhost:3000/send", 
-            data: {
-                name: name,   
-                email: email,  
-                messsage: message
-            }
-        }).then((response)=>{
+        console.log('name', name)
+
+        axios.post('/send', {name, email, message})
+        .then((response)=>{
+            console.log(response)
             if (response.data.msg === 'success'){
                 alert("Message Sent."); 
-                resetForm()
+                this.resetForm()
             }else if(response.data.msg === 'fail'){
                 alert("Message failed to send.")
             }
         })
+        console.log('name2', name)
     }
 
    
-
+render() {
     return ( 
         <div>
             <form id="contact-form" onSubmit={(event) => event.preventDefault()}>
@@ -48,12 +45,13 @@ const Contact = () => {
                     <label for="message">Message</label>
                     <textarea className="form-control" rows="5" id="message" required></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary"  onClick={(e) => handleSubmit(e)}>Submit</button>
+                <button type="submit" className="btn btn-primary"  onClick={(e) => this.handleSubmit(e)}>Submit</button>
             </form>
 
         </div>
     );
     
+}
 }
  
 export default Contact;
