@@ -9,7 +9,8 @@
 }
 
 .landing-intro-container {
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,22 +27,24 @@
     }
     .landing-right-side{
         .my-img{
-            background-image: url('../../media/IMG_E8438.jpg');
+            background-image: url('../../media/1231ProfPic.svg');
             height: 250px;
             width: 250px;
-            border-radius: 50%;
+            // border-radius: 50%;
             background-size: contain;
             background-repeat: no-repeat;
-            // object-fit: center;
+            object-fit: center;
         }
     }
-    .down-arrow{
-        background-image: url('../../media/noun_Arrow\ Down_1594877.svg');
-        height: 30px;
-        width: 30px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+   
+}
+.down-arrow{
+    background-image: url('../../media/noun_Arrow\ Down_1594877.svg');
+    height: 30px;
+    width: 30px;
+    margin-bottom: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 // header 
