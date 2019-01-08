@@ -21,7 +21,6 @@ var transport = {
 
 
 module.exports = {
-    
     send: (req, res) => {
         var name = req.body.name
         var email = req.body.email
@@ -53,6 +52,29 @@ module.exports = {
             })
           }
         })
+    },
+
+    getCodeProjects:(req, res) => {
+      let db = req.app.get('db');
+      db.get_code_projects()
+      .then(projects => {
+        res.status(200).send(projects);
+      })
+      .catch(err => {
+        console.log('err in getCodeProjects', err)
+        res.status(500).send(err)
+      })
+    },
+    getDesignProjects:(req, res) => {
+      let db = req.app.get('db');
+      db.get_design_projects()
+      .then(projects => {
+        res.status(200).send(projects);
+      })
+      .catch(err => {
+        console.log('err in getDesignProjects', err)
+        res.status(500).send(err)
+      })
     }
 
 }
