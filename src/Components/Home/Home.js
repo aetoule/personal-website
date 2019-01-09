@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './home.scss';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import azrainThumbnail from '../../media/az-rain-cropped-thumbnail.jpg';
 import airbnbThumbnail from '../../media/airbnb-cropped-thumbnail.jpg';
 import babyNameThumbnail from '../../media/babyname-cropped-thumbnail.jpg';
@@ -33,7 +34,7 @@ class Home extends Component {
         console.log('entered getDesignProjects')
         axios.get('/api/designprojects').then(res=>{
             this.setState({
-                codeProjectsList: res.data
+                designProjectsList: res.data
             })
         })
         console.log(this.state.codeProjectsList)
@@ -47,21 +48,26 @@ class Home extends Component {
         const codeProjectsListDisplay = this.state.codeProjectsList.map((project, i) => {
             return (
                 <div className="individual-project-container">
-                    <img className="project-thumbnail-img" src={project.project_thumbnail}/>
-                            <h3 className="project-title">{project.project_name}</h3>
+                    <Link to={`/projectpage/code/${project.projectid}`}>
+                        <img className="project-thumbnail-img" src={project.project_thumbnail}/>
+                        <h3 className="project-title">{project.project_name}</h3>
+                    </Link>
                 </div>
             )
         })
 
         const designProjectsListDisplay = this.state.designProjectsList.map((project, i) => {
             return (
-                <div className="individual-project-container">
-                    <img className="project-thumbnail-img" src={project.project_thumbnail}/>
-                            <h3 className="project-title">{project.project_name}</h3>
-                </div>
+                
+                    <div className="individual-project-container">
+                    <Link to={`/designprojectpage/${project.projectid}`}>
+                        <img className="project-thumbnail-img" src={project.project_thumbnail}/>
+                                <h3 className="project-title">{project.project_name}</h3>
+                                </Link>
+                    </div>
+                
             )
         })
-        console.log(this.state.toggle)
 
         return (  
             <div className="home-body">
@@ -87,7 +93,6 @@ class Home extends Component {
                         <button onClick={()=> this.setState({toggle: false})}><h2 className="toggle-title">DESIGN</h2></button>
                     </div>
                     
-                    
                     {this.state.toggle ?
                         <div className="projects-container">
                             {codeProjectsListDisplay}
@@ -95,34 +100,9 @@ class Home extends Component {
                         :
                         <div className="projects-container">
                             {designProjectsListDisplay}       
-                        </div>
-                        
+                        </div>                       
                      }
-                    {/* <div className="projects-container">
-                        {codeProjectsListDisplay} */}
-                        {/*  */}
-                        {/* <div className="individual-project-container code">
-                            <img className="project-thumbnail-img" src={azrainThumbnail}/>
-                            <h3 className="project-title">AZ Rain</h3>
-                        </div>
-                        <div className="individual-project-container code">
-                            <img className="project-thumbnail-img" src={airbnbThumbnail}/>
-                            <h3 className="project-title">Airbnb Clone</h3>
-                        </div>
-                        <div className="individual-project-container code">
-                            <img className="project-thumbnail-img" src={babyNameThumbnail}/>
-                            <h3 className="project-title">Baby Name Generator</h3>
-                        </div>
-                        <div className="individual-project-container design">
-                            <img className="project-thumbnail-img" src={babyNameThumbnail}/>
-                            <h3 className="project-title">Cup of Tea</h3>
-                        </div>
-                        <div className="individual-project-container design">
-                            <img className="project-thumbnail-img" src={babyNameThumbnail}/>
-                            <h3 className="project-title">Personal OS</h3>
-                        </div> */}
-                    {/* </div> */}
-                    
+               
                 </div>
             </div>
         );

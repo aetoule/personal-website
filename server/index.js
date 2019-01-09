@@ -22,7 +22,7 @@ app.post('/send', controller.send);
 // endpoints for projects thumbnails
 app.get('/api/codeprojects', controller.getCodeProjects);
 app.get('/api/designprojects', controller.getDesignProjects);
-
+app.get('/api/onecodeproject/:id', controller.getOneCodeProject);
 
 const PORT = 4000;
 app.listen(PORT, ()=> console.log(`Server listening on port ${PORT}`));

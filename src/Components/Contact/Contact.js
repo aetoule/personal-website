@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './contact.scss';
 
 class Contact extends Component {
 
@@ -32,20 +33,21 @@ render() {
     return ( 
         <div>
             <form id="contact-form" onSubmit={(event) => event.preventDefault()}>
-                <h2>Please feel free to reach out!</h2>
+                <h2 className="reach-out-text">Please feel free to reach out!</h2>
                 <div className="form-group">
-                    <label for="name">Name</label>
+                    <label for="name" className="input-box-label">Name</label>
                     <input type="text" id="name" required/>
                 </div>
                 <div className="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
+                    <label for="exampleInputEmail1" className="input-box-label">Email address</label>
                     <input type="email" className="form-control" id="email" aria-describedby="emailHelp" required/>
                 </div>
                 <div className="form-group">
-                    <label for="message">Message</label>
+                    <label for="message" className="input-box-label">Message</label>
                     <textarea className="form-control" rows="5" id="message" required></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary"  onClick={(e) => this.handleSubmit(e)}>Submit</button>
+                
+                <button type="submit" className="submit-mail-btn"  onClick={(e) => this.handleSubmit(e)}>Submit</button>
             </form>
 
         </div>

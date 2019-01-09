@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import routes from './routes';
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/footer';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         {routes}
+        <Footer/>
       </div>
     );
   }

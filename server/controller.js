@@ -75,6 +75,18 @@ module.exports = {
         console.log('err in getDesignProjects', err)
         res.status(500).send(err)
       })
+    },
+    getOneCodeProject: (req, res) => {
+      let db = req.app.get('db');
+      let {id} = req.params;
+      console.log(id)
+      db.get_one_code_project(id)
+      .then(project => {
+        res.status(200).send(project)
+      })
+      .catch(err => {
+        res.status(500).send({errorMessage: "Error with getting one code project.", err});
+      })
     }
 
 }
