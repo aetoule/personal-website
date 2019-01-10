@@ -3,3 +3,43 @@
     text-align: center;
     width: 100%;
 }
+
+.project-title{
+    padding-top: 100px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.intro-section{
+    padding-bottom: 50px;
+}
+
+.feature-container{
+    display: flex;
+    .feature-left-container{
+        width: 40%;
+        padding-right: 15px;
+        .feature-img{
+            width: 100%;
+            object-fit: contain;
+            // padding-top: 0;
+            // margin-top: 0;
+            top: 0;
+        }
+    }
+
+    .feature-right-container{
+        padding-left: 15px;
+        width: 40%;
+        .feature-title{
+            text-transform: uppercase;
+            color: #d1d1d1;
+        }
+    }
+    
+    
+}
+

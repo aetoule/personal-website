@@ -16,8 +16,8 @@ class Header extends Component {
                 </div>
                 <div className="header-right-side-nav">
                     <ul>
-                        <li><Link to="/skills">SKILLS</Link></li>
-                        <li><Link to="/portfolio">PORTFOLIO</Link></li>
+                        {/* <li><Link to="/skills">SKILLS</Link></li> */}
+                        <li><Link to="/aboutme">ABOUT ME</Link></li>
                         <li><Link to="/contact">CONTACT</Link></li>
                     </ul>
                 </div>

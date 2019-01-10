@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Skills from './Components/Skills/Skills';
-import Portfolio from './Components/Portfolio/Portfolio';
+import AboutMe from './Components/AboutMe/AboutMe';
 import Contact from './Components/Contact/Contact';
 import ProjectPage from './Components/ProjectPage/ProjectPage';
 import PersonalOS from './Components/PersonalOS/PersonalOS';
@@ -15,9 +15,9 @@ export default (
     <Switch>
         <Route exact to path="/" component={Home} />
         <Route path="/skills" component={Skills} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/aboutme" component={AboutMe} />
         <Route path="/contact" component={Contact} />
-        
+
         <Route path="/projectpage/code/:id" component={ProjectPage}/>
 
         {/* Personal OS */}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './AboutMe.scss';
 
 class Portfolio extends Component {
     constructor(props) {
@@ -8,7 +9,11 @@ class Portfolio extends Component {
     render() { 
         return (  
             <div>
-                This is portfolio
+                <div className="left-and-right-container">
+                    <div className="left-side-container">img</div>
+                    <div className="right-side-container">About me text</div>
+                    </div>
+                
             </div>
         );
     }
