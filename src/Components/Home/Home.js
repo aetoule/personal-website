@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './home.scss';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import azrainThumbnail from '../../media/az-rain-cropped-thumbnail.jpg';
-import airbnbThumbnail from '../../media/airbnb-cropped-thumbnail.jpg';
-import babyNameThumbnail from '../../media/babyname-cropped-thumbnail.jpg';
 
 class Home extends Component {
     constructor(props) {
@@ -18,7 +15,6 @@ class Home extends Component {
 
     componentDidMount(){
         this.getCodeProjects();
-        console.log(this.state.codeProjectsList)
         this.getDesignProjects();
     }
 
@@ -57,15 +53,13 @@ class Home extends Component {
         })
 
         const designProjectsListDisplay = this.state.designProjectsList.map((project, i) => {
-            return (
-                
-                    <div className="individual-project-container">
-                    <Link to={`/designprojectpage/${project.projectid}`}>
-                        <img className="project-thumbnail-img" src={project.project_thumbnail}/>
-                                <h3 className="project-title">{project.project_name}</h3>
-                                </Link>
-                    </div>
-                
+            return (        
+                <div className="individual-project-container">
+                <Link to={`/designprojectpage/${project.projectid}`}>
+                    <img className="project-thumbnail-img" src={project.project_thumbnail}/>
+                            <h3 className="project-title">{project.project_name}</h3>
+                            </Link>
+                </div>             
             )
         })
 

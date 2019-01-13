@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './philantrophy.scss';
 
 class Philantrophy extends Component {
     constructor(props) {

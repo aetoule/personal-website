@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './transform.scss';
 
 class Transform extends Component {
     constructor(props) {

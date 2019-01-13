@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './cupoftea.scss';
 
 class CupOfTea extends Component {
     constructor(props) {

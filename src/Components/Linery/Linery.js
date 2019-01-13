@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './linery.scss';
 
 class Linery extends Component {
     constructor(props) {
