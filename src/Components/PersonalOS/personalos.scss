@@ -1,0 +1,72 @@
+.design-page-container{
+    padding: 0 150px;
+}
+.youtube-video-container{
+    text-align: center;
+    padding: 17px 0;
+
+}
+.personal-project-title{
+    color: #FFBBBB;
+    font-family: futura-pt;
+    font-style: normal;
+    line-height: 1.5em;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.personal-section-title{
+    padding-top: 68px;
+    @extend .personal-project-title;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.personal-section-title-and-container{
+    margin: 0 auto;
+    padding-bottom: 68px;
+}
+
+.project-description-intro-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    .personal-description-left-side-container{
+        // margin: 0 auto;
+        width: 45%;
+    }
+    .personal-description-right-side-container{
+        // margin: 0 auto;
+        width: 35%;
+        // align-self: flex-end;
+        // padding-left: 20px;
+        .description-title-bold{
+            padding-bottom: 10px;
+        }
+        .description-text {
+            padding-bottom: 10px;
+        }
+    }
+
+}
+
+.section-subtitle{
+    text-transform: uppercase;
+    font-family: proxima-nova;
+    line-height: 1.8em;
+    font-size: 20px;
+    color: #575757;
+    font-weight: bold;
+}
+
+li{
+    list-style-type: disc;
+}
+
+li ::before {
+    padding-left: 20px;
+}
