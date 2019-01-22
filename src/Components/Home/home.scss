@@ -60,8 +60,17 @@
     color: #222;
     text-transform: uppercase;
     letter-spacing: 0.06rem;
-    
 }
+.toggle-title-active{
+    font-family: futura-pt, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: pink;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    border-bottom: 5px solid pink;
+}
+
 
 button{
     background: none;

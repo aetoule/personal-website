@@ -28,7 +28,7 @@ class ProjectPage extends Component {
 
     render() { 
         console.log(this.state.projectDetails)
-        const {projectid, project_name, project_thumbnail,
+        const {project_name,
             landing_img,
             project_description, 
             technologies_used, 
@@ -45,54 +45,56 @@ class ProjectPage extends Component {
             feature3_title, 
             feature3_description, 
             feature3_link} = this.state.projectDetails;
+
         return ( 
             <div>
                 <img className="landing-img" src={landing_img}/>
-                <h1 className="project-title">{project_name}</h1>
-                <div className="intro-section">
-                    <p>{project_description}</p>
-                    <div>
-                        <h3>Technologies used:</h3>
-                        <p>{technologies_used}</p>
-                        <p>Checkout my github repo <a href={github_repo_link} target="_blank">here</a>!</p>
+                <div className="area-under-landing-img">
+                    <h1 className="project-title">{project_name}</h1>
+                    <div className="intro-section">
+                        <p className="project-description">{project_description}</p>
+                        <div className="technologies-used">
+                            <h3>Technologies used:</h3>
+                            <p>{technologies_used}</p>
+                            <p>Checkout my github repo <a href={github_repo_link} target="_blank">here</a>!</p>
+                        </div>
                     </div>
-                </div>
 
-                <div className="feature-container">
-                    <div className="feature-left-container">
-                    <img className="feature-img" src={feature1_img}/>
+                    <div className="feature-container">
+                        <div className="feature-left-container">
+                        <img className="feature-img" src={feature1_img}/>
+                        </div>
+                        <div className="feature-right-container">
+                            <h2 className="feature-title">{feature1_title}</h2>
+                            <p className="feature-description-text">{feature1_description}</p>
+                            <button className="view-page-btn"><a href={feature1_link}><p className="view-page-btn-text">View Page</p></a></button>
+                        </div>
                     </div>
-                    <div className="feature-right-container">
-                        <h2 className="feature-title">{feature1_title}</h2>
-                        <p>{feature1_description}</p>
-                        <button><a href={feature1_link}><p>Vist page here</p></a></button>
-                    </div>
-                </div>
 
-                <div className="feature-container">
-                    <div className="feature-left-container">
-                    <img className="feature-img" src={feature2_img}/>
+                    <div className="feature-container">
+                        <div className="feature-left-container">
+                        <img className="feature-img" src={feature2_img}/>
+                        </div>
+                        <div className="feature-right-container">
+                            <h2 className="feature-title">{feature2_title}</h2>
+                            <p className="feature-description-text">{feature2_description}</p>
+                            <button className="view-page-btn"><a href={feature2_link}><p className="view-page-btn-text">View Page</p></a></button>
+                        </div>
                     </div>
-                    <div className="feature-right-container">
-                        <h2 className="feature-title">{feature2_title}</h2>
-                        <p>{feature2_description}</p>
-                        <button><a href={feature2_link}><p>Vist page here</p></a></button>
-                    </div>
-                </div>
 
-                <div className="feature-container">
-                    <div className="feature-left-container">
-                    <img className="feature-img" src={feature3_img}/>
-                    </div>
-                    <div className="feature-right-container">
-                        <h2 className="feature-title">{feature3_title}</h2>
-                        <p>{feature3_description}</p>
-                        <button><a href={feature3_link}><p>Vist page here</p></a></button>
+                    <div className="feature-container">
+                        <div className="feature-left-container">
+                        <img className="feature-img" src={feature3_img}/>
+                        </div>
+                        <div className="feature-right-container">
+                            <h2 className="feature-title">{feature3_title}</h2>
+                            <p className="feature-description-text">{feature3_description}</p>
+                            <button className="view-page-btn"><a href={feature3_link}><p className="view-page-btn-text">View page</p></a></button>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-         );
+        );
     }
 }
  

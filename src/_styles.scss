@@ -1,5 +1,6 @@
 // colors
 $gray: #575757;
+$lightgray: #d1d1d1;
 // fonts
 
 p {
@@ -18,3 +19,22 @@ h2 {
     font-size: 1.8rem;
 }
 
+h5{
+    text-transform: uppercase;
+    color: $lightgray;
+    font-family: futura-pt;
+    font-weight: bold;
+    line-height: 1.2em;
+    letter-spacing: .06em;
+    font-size: 1.8rem;
+}
+
+h4{
+    text-transform: uppercase;
+    font-family: proxima-nova;
+    line-height: 1.8em;
+    font-size: 20px;
+    color: #575757;
+    font-weight: bold;
+    padding-bottom: 15px;
+}

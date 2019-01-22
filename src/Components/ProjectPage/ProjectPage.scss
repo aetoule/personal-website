@@ -4,8 +4,12 @@
     width: 100%;
 }
 
+.area-under-landing-img{
+    padding: 0 50px;
+}
+
 .project-title{
-    padding-top: 100px;
+    padding-top: 150px;
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: .06em;
@@ -14,13 +18,26 @@
 }
 
 .intro-section{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .project-description{
+        width: 55%;
+        // margin-right: 15px;
+
+    }
+    .technologies-used{
+        width: 40%;
+    }
 }
 
 .feature-container{
     display: flex;
+    margin-bottom: 100px;
     .feature-left-container{
-        width: 40%;
+        width: 50%;
         padding-right: 15px;
         .feature-img{
             width: 100%;
@@ -28,6 +45,7 @@
             // padding-top: 0;
             // margin-top: 0;
             top: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
         }
     }
 
@@ -37,9 +55,26 @@
         .feature-title{
             text-transform: uppercase;
             color: #d1d1d1;
-        }
+            // font- weight: bold;
+            font-size: 2.5rem;
+        } 
+        .feature-description-text{
+            padding-bottom: 10px;
+        }  
     }
     
-    
+    .view-page-btn{
+        margin-top: 15px;
+        background: #272727;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        .view-page-btn-text{
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
 }
 

@@ -82,10 +82,19 @@ class Home extends Component {
                 <p className="home-page-p">Over the course of this journey I’ve built some applications I’m really proud of! Check them out below 😊</p> */}
 
                 <div className="my-work-container">
-                    <div className="type-titles">
-                        <button onClick={()=> this.setState({toggle: true})}><h2 className="toggle-title">CODE</h2></button>
+
+                    {this.state.toggle ?
+                        <div className="type-titles">
+                        <button onClick={()=> this.setState({toggle: true})}><h2 className="toggle-title-active">CODE</h2></button>
                         <button onClick={()=> this.setState({toggle: false})}><h2 className="toggle-title">DESIGN</h2></button>
                     </div>
+                    :
+                    <div className="type-titles">
+                        <button onClick={()=> this.setState({toggle: true})}><h2 className="toggle-title">CODE</h2></button>
+                        <button onClick={()=> this.setState({toggle: false})}><h2 className="toggle-title-active">DESIGN</h2></button>
+                    </div>
+                    }
+                    
                     
                     {this.state.toggle ?
                         <div className="projects-container">
