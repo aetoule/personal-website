@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './personalos.scss';
-import personalLandingImg from '../../media/az-rain-cover-img.png';
 import YouTube from 'react-youtube';
+import '../ProjectMenuFooter/ProjectMenuFooter';
+
+// Page Images
 import iPhoneSiriImg from '../../media/voice-ui-siri-img.jpg';
 import PersonalWhiteboardDrawing from '../../media/personal-whiteboard-drawing.jpg';
 import WearableSketches from '../../media/Wearable-sketches.jpg';
@@ -18,13 +21,16 @@ import Sprint3Img1 from '../../media/sprint3img1.png';
 import Sprint3Img2 from '../../media/sprint3img2.png';
 import Sprint4Img1 from '../../media/sprint4img1.png';
 import Sprint4Img2 from '../../media/sprint4img1.png';
-
+import ProjectMenuFooter from '../ProjectMenuFooter/ProjectMenuFooter';
 
 class PersonalOS extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            designProjectNumber: 1
+         }
     }
+
     render() { 
         const opts = {
             height: '390',
@@ -217,9 +223,9 @@ class PersonalOS extends Component {
                 </div>
                 <hr className="section-divider-line"></hr>
 
+                <ProjectMenuFooter projectNumber = {this.state.designProjectNumber}/>
+
             </div> 
-           
-                
             );
     }
     _onPlay(event) {

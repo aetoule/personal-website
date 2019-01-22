@@ -57,8 +57,8 @@ class Home extends Component {
                 <div className="individual-project-container">
                 <Link to={`/designprojectpage/${project.projectid}`}>
                     <img className="project-thumbnail-img" src={project.project_thumbnail}/>
-                            <h3 className="project-title">{project.project_name}</h3>
-                            </Link>
+                    <h3 className="project-title">{project.project_name}</h3>
+                </Link>
                 </div>             
             )
         })
