@@ -54,6 +54,10 @@ p {
   line-height: 1.8em;
   font-size: 20px;
 }
+
+b{
+  font-weight: bold;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
@@ -81,6 +85,7 @@ html {
 box-sizing:border-box;
 font-size: 10px;
 }
+
 
 a{
   text-decoration: none;
