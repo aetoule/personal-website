@@ -26,7 +26,7 @@ class ProjectMenuFooter extends Component {
 
     render() { 
         const projectId = this.props.projectNumber;
-        const mappedDesignProjectList = this.state.designProjectsList.slice(projectId).map((project, i) => {
+        const mappedDesignProjectList = this.state.designProjectsList.map((project, i) => {
             return(                
                 <div className="individual-project-container">
                     <Link to= {`/designprojectpage/${project.projectid}`}>
