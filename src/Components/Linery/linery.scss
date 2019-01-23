@@ -1,0 +1,32 @@
+
+// darker option #336478
+.linery{
+    color: #C7DCE5;
+}
+
+.rationale-feedback-test{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .rationale-feedback-test-headers{
+        margin-bottom: 10px;
+    }
+
+    .rationale-feedback-section{
+        width: 80%;
+    }
+
+    .feedback-section{
+        margin-top: 15px;
+    }
+
+    .test-section{
+        width: 80%;
+        margin-left: 150px;
+    }
+    .rationale-feedback-section.our-rationale{
+        width: 40%;
+    }
+}
+
