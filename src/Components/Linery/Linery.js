@@ -10,18 +10,6 @@ import gallery2 from '../../media/gallery2.svg';
 import gallery3 from '../../media/gallery3.svg';
 import gallery4 from '../../media/gallery4.svg';
 
-
-// delete later
-import comparisonChart from '../../media/cot-comparison-chart.png';
-import personas from '../../media/cot-personas.png';
-import lofiImg1 from '../../media/cot-lofi-img1.png';
-import lofiImg2 from '../../media/cot-lofi-img2.png';
-import sprint1Img1 from '../../media/cot-sprint1-img1.png';
-import sprint1Img2 from '../../media/cot-sprint1-img2.png';
-import sprint2Img1 from '../../media/cot-sprint2-img1.png';
-import sprint2Img2 from '../../media/cot-sprint2-img2.png';
-import finalImg from '../../media/cot-final-img.png';
-// 
 import ProjectMenuFooter from '../ProjectMenuFooter/ProjectMenuFooter';
 
 
@@ -29,7 +17,7 @@ class Linery extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            designProjectNumber: 3
+            designProjectNumber: 4
          }
     }
     render() { 
