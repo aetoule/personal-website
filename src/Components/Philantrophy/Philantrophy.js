@@ -2,23 +2,10 @@ import React, { Component } from 'react';
 import './philantrophy.scss';
 
 import landingImg from '../../media/philantrophy-landing.jpeg';
-import initialMockupGallery from '../../media/ph-initialmockup-gallery.svg';
+import initialMockupGallery from '../../media/ph-initialmockup-gallery2.svg';
 import version2Img from '../../media/ph-version2.jpg';
 import finalGallery from '../../media/ph-gallery3-imgs.svg';
-
 import ProjectMenuFooter from '../ProjectMenuFooter/ProjectMenuFooter';
-
-
-// delete later
-import personaImg from '../../media/li-sunho.jpeg';
-import initialImpressionSketch from '../../media/li-initial-impression.jpeg';
-import designSectionSketch from '../../media/li-design-sketch.jpg';
-import gallery1 from '../../media/gallery1-imgs.svg';
-import gallery2 from '../../media/gallery2.svg';
-import gallery3 from '../../media/gallery3.svg';
-import gallery4 from '../../media/gallery4.svg';
-// 
-
 
 class Philantrophy extends Component {
     constructor(props) {

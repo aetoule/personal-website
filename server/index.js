@@ -24,5 +24,12 @@ app.get('/api/codeprojects', controller.getCodeProjects);
 app.get('/api/designprojects', controller.getDesignProjects);
 app.get('/api/onecodeproject/:id', controller.getOneCodeProject);
 
-const PORT = 4000;
+const PORT = 4001;
 app.listen(PORT, ()=> console.log(`Server listening on port ${PORT}`));
+
+app.use( express.static( `${__dirname}/../build` ) );
+
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})

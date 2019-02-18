@@ -5,7 +5,7 @@ import landingImg from '../../media/li-landing-img.jpeg';
 import personaImg from '../../media/li-sunho.jpeg';
 import initialImpressionSketch from '../../media/li-initial-impression.jpeg';
 import designSectionSketch from '../../media/li-design-sketch.jpg';
-import gallery1 from '../../media/gallery1-imgs.svg';
+import gallery1 from '../../media/gallery1-imgs2.svg';
 import gallery2 from '../../media/gallery2.svg';
 import gallery3 from '../../media/gallery3.svg';
 import gallery4 from '../../media/gallery4.svg';
